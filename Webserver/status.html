@@ -1,0 +1,13 @@
+<statusWindow>
+	<h1>STATUS : <Green>ONLINE</Green></h1>
+	<br></br> 
+		<?php
+			$handle = fopen("linker/info.txt", "r");
+			$Vbat = fgets($handle);
+			
+			echo "<h3>Baterij lading:".$Vbat."%";
+			echo  "<progress value=\"".Vbat."\" max=\"100\"></progress>";
+		?>	
+
+	<br></br>
+</statusWindow>

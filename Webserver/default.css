@@ -1,0 +1,93 @@
+* { 
+	padding: 0; 
+	margin: 0; 
+	background :back.png;
+}
+
+main {
+	background : #eee;
+	display: block;
+	
+    position:absolute;
+	width: 76%;
+	top:2%;
+	left:2%;
+	
+    padding: 10px;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+statusWindow {
+	background : #eee;
+	display: block;
+	
+    position:absolute;
+	width: 15%;
+	top:2%;
+	left:82%;
+	
+    padding: 10px;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+Afsluitopties {
+	background : #eee;
+	display: block;
+	
+    position:absolute;
+	width: 15%;
+	top:300px;
+	left:82%;
+	
+    padding: 10px;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+Green {
+	color: #00B002;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 98%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
